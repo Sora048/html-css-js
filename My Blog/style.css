@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+main {  
+    width: 95%;
+    margin: 0 auto;
+}
+
+section {
+    width: 350px;
+    height: 250px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+section img {
+    width: 50%;
+    position: absolute;
+    z-index: 2;
+}
+
+.icon {
+    width: 244px;
+    text-align: right;
+    margin-left: .8em;
+    padding-right: .62em;
+
+    border: 2px solid #111;
+    border-left: none;
+
+    position: absolute;
+    z-index: 1;
+
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(#ffe7e7, #ff9b9b, rgb(255, 59, 59));
+}
+
