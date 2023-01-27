@@ -4,7 +4,8 @@
 }
 
 body {
-    margin: 0 auto;
+    font-family: Verdana;
+    font-size: .75rem;
 }
 
 a {
@@ -19,24 +20,57 @@ main {
 section {
     width: 350px;
     height: 250px;
+    margin: 0 auto;
+
+    border: 3px solid #111;
+
     display: flex;
     flex-direction: row;
-    align-items: center;
 }
 
-section img {
-    width: 50%;
-    position: absolute;
+.box-1 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.box-2 {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+
+.img-box-1 {
+    max-width: 180px;
+    max-height: 180px;
+
+    border-radius: 50%;
+    border: 3px solid #111;
+
+    overflow: hidden;
     z-index: 2;
 }
 
-.icon {
-    width: 244px;
-    text-align: right;
-    margin-left: .8em;
-    padding-right: .62em;
+.img-box-2 {
+    max-width: 180px;
+    max-height: 180px;
+    margin-left: auto;
 
-    border: 2px solid #111;
+    border-radius: 50%;
+    border: 3px solid #111;
+
+    overflow: hidden;
+    z-index: 2;
+}
+
+.icon-box-1{
+    width: 338px;
+    text-align: right;
+    margin-left: 1em;
+
+    border: 3px solid #111;
     border-left: none;
 
     position: absolute;
@@ -46,3 +80,43 @@ section img {
     background-image: radial-gradient(#ffe7e7, #ff9b9b, rgb(255, 59, 59));
 }
 
+.icon-box-2{
+    width: 338px;
+    text-align: left;
+    margin-right: 1em;
+
+    border: 3px solid #111;
+    border-right: none;
+
+    position: absolute;
+    z-index: 2;
+
+    background-color: red; /* For browsers that do not support gradients */
+    background-image: radial-gradient(#ffe7e7, #ff9b9b, rgb(255, 59, 59));
+}
+
+section img {
+    width: 100%;
+}
+
+.icon-1 {
+    margin-right: .65em;
+}
+
+.icon-2 {
+    margin-left: .65em;
+}
+
+.fa-instagram{
+    font-size: 75px;
+    background: -webkit-linear-gradient(230deg, #515BD4, #8134AF, #DD2A7B, #FEDA77, #F58529);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-facebook {
+    color: #1877f2;
+    padding: 7.50px 0;
+    font-size: 60px;
+    margin-right: 1.15em;
+}
